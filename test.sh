@@ -1,5 +1,6 @@
 source auto/scripts/base.sh
 
-# check_command_installed docker123
+check_command_installed temporal
 
-print_and_execute docker --help
+## download temporal
+## https://temporal.download/cli/archive/latest?platform=linux&arch=amd64

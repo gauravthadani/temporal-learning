@@ -5,3 +5,7 @@ ESS.egg-info
 __pycache__
 
 ## Docker volumes
+
+
+bin/*
+!bin/.gitkeep
