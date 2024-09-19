@@ -9,3 +9,6 @@ __pycache__
 
 bin/*
 !bin/.gitkeep
+
+temporal
+temporal_cli_1.1.0_linux_amd64.tar.gz
