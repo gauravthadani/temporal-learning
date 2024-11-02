@@ -24,6 +24,7 @@ func Workflow(ctx workflow.Context, name string) (string, error) {
 		logger.Error("Activity failed.", "Error", err)
 		return "", err
 	}
+			
 
 	logger.Info("HelloWorld workflow completed.", "result", result)
 
