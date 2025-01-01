@@ -16,6 +16,7 @@ func GreetSomeone(ctx workflow.Context, name string) (string, error) {
 
 	options := workflow.ActivityOptions{
 		StartToCloseTimeout: time.Second * 5,
+		RetryPolicy: ,
 	}
 	ctx = workflow.WithActivityOptions(ctx, options)
 
