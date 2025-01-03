@@ -21,5 +21,20 @@ func translate(rw http.ResponseWriter, r *http.Request) {
 
 	// time.Sleep(time.Second * 6)
 	name := r.URL.Query().Get("name")
-	io.WriteString(rw, fmt.Sprintf("Hola! %s", name))
+	lang := r.URL.Query().Get("lang")
+
+	if lang == "" {
+		lang = "spanish"
+	}
+	log.Println("Am I coming here")
+
+	log.Println(lang)
+
+	switch lang {
+	case "french":
+		io.WriteString(rw, fmt.Sprintf("Bon jour! %s", name))
+
+	default:
+		io.WriteString(rw, fmt.Sprintf("Hola! %s", name))
+	}
 }
